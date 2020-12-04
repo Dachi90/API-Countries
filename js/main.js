@@ -35,7 +35,7 @@ function cardSelected(e) {
     //console.log(e.target.textContent);
     let html = "";
     getData({
-      url: `https://restcountries.eu/rest/v2/name/${e.target.textContent}`,
+      url: `https://restcountries.eu/rest/v2/name/${e.target.textContent}?fullText=true`,
       cbSuccess: async (json) => {
         //console.log(json);
         html = `
